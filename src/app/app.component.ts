@@ -38,6 +38,7 @@ export class AppComponent implements AfterViewInit {
       progressColor: 'purple',
       loaderColor: 'purple',
       cursorColor: 'navy',
+      normalize: true,
       plugins: [
         SpectrogramPlugin.create({
           container: '#wave-spectrogram',
@@ -46,6 +47,7 @@ export class AppComponent implements AfterViewInit {
         })
       ]
     };
+
     this.wavesurfer = WaveSurfer.create(this.options);
     this.loadingBar();
     this.wavesurfer.load('./assets/bensound-thejazzpiano.mp3');
