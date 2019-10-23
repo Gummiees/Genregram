@@ -1,6 +1,17 @@
-<div id="waveform">
-  <div #progressBar class="progress progress-striped active" id="progress-bar">
-    <div class="progress-bar progress-bar-info"></div>
+<div class="container">
+  <div #progressBar class="playground-container">
+    <mat-progress-bar mode="determinate" [value]="percentage"></mat-progress-bar>
+    <div id="waveform"></div>
+    <div id="wave-spectrogram"></div>
+
+    <div #controls class="controls">
+      <button class="margin-right-15" mat-mini-fab (click)="play()">
+        <mat-icon>play_arrow</mat-icon>
+      </button>
+      <button mat-mini-fab (click)="stop()">
+        <mat-icon>pause</mat-icon>
+      </button>
+    </div>
   </div>
+  <footer>Music: https://www.bensound.com</footer>
 </div>
-<div id="wave-spectrogram"></div>

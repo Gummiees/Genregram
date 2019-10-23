@@ -1,0 +1,19 @@
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+.mat-progress-bar {
+  margin-bottom: 20px;
+}
